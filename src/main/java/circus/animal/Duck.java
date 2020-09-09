@@ -1,4 +1,12 @@
+package circus.animal;
+
 public class Duck extends Bird {
+
+    @Override
+    public int getValue() {
+        return 10;
+    }
+
     @Override
     public String speak() {
         return "Quack Quack";
