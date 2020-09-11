@@ -8,7 +8,7 @@ import circus.animal.Parrot;
 
 public class Trainer {
     public static void main(String[] args) {
-        Duck d = new Duck();
+        Duck d = new Duck("Donald");
         getToSpeak(d);
 
         Bird b = (Bird)d;  // upcasting
@@ -18,10 +18,9 @@ public class Trainer {
         getToSpeak(a);
 
         Duck d2 = (Duck) a; // downcasting
-        train(new Duck());
-        train(new Parrot());
         //circus.animal.Animal a2 = new circus.animal.Animal();
         //circus.animal.Bird b2 = new circus.animal.Bird();
+        train(new Duck("Daisy"));
         // train(new circus.animal.Parrot());
     }
 
